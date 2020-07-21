@@ -22,7 +22,7 @@ Container local (interactive mode)
 
 Docker compose (local)
 ```
-docker-compose -f cloud/docker-compose.yml up -d --build
+❯ docker-compose -f cloud/docker-compose.yml up -d --build
 ```
 
 Docker compose (prod)
@@ -32,12 +32,12 @@ Docker compose (prod)
 
 bash file (dev)
 ```
-./run-app-deploy.sh --dev
+❯ ./run-app-deploy.sh --dev
 ```
 
 bash file (prod)
 ```
-./run-app-deploy.sh --prod
+❯ ./run-app-deploy.sh --prod
 ```
 
 References: 
