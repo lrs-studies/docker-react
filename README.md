@@ -12,7 +12,7 @@ Local
 
 Build image
 ```
-❯ docker build -t [new-image-name] . --no-cache                                        
+❯ docker build -t [new-image-name] -f cloud/Dockerfile . --no-cache                                        
 ```
 
 Container local (interactive mode)
@@ -22,12 +22,12 @@ Container local (interactive mode)
 
 Docker compose (local)
 ```
-docker-compose up -d --build
+docker-compose -f cloud/docker-compose.yml up -d --build
 ```
 
 Docker compose (prod)
 ```
-❯ docker-compose -f docker-compose-prod up -d --build                                          
+❯ docker-compose -f cloud/docker-compose-prod.yml up -d --build                                          
 ```
 
 bash file (dev)
